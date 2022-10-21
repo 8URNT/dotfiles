@@ -67,7 +67,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.65
+  opacity: 0.85
 
   # Startup Mode (changes require restart)
   #
@@ -97,12 +97,12 @@ window:
   #
   # Override the variant of the GTK theme. Commonly supported values are `dark`
   # and `light`. Set this to `None` to use the default theme variant.
-  #gtk_theme_variant: None
+  window.decorations_theme_variant: Graphite-teal-Dark-nord
 
-#scrolling:
+scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
-  #history: 10000
+  history: 10000
 
   # Scrolling distance multiplier.
   #multiplier: 3
@@ -110,14 +110,14 @@ window:
 # Font configuration
 font:
   # Normal (roman) font face
-  #normal:
+  normal:
     # Font family
     #
     # Default:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    #family: monospace
+    family: Hack Nerd Font Mono
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -156,14 +156,14 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 18
+  size: 12
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
   offset:
     x: 0
-    y: -5
+    y: 2
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the
@@ -188,11 +188,15 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
+# Window decorations
+decorations: none
+decorations_theme_variant: Light
+
 # Colors (Tomorrow Night)
 colors:
   primary:
     background: '#313744'
-    foreground: '#d8dee9'
+    foreground: '#D2D2D2'
     dim_foreground: '#a5abb6'
   cursor:
     text: '#2e3440'
@@ -201,32 +205,32 @@ colors:
     text: '#2e3440'
     cursor: '#d8dee9'
   selection:
-    text: CellForeground
-    background: '#4c566a'
+    text: '#000000'
+    background: '#FFFACD'
   search:
     matches:
       foreground: CellBackground
       background: '#88c0d0'
-    bar:
+    colors.footer_bar:
       background: '#434c5e'
       foreground: '#d8dee9'
   normal:
     black: '#3b4252'
-    red: '#bf616a'
-    green: '#a3be8c'
+    red: '#B3644D'
+    green: '#6A9D6C'
     yellow: '#ebcb8b'
-    blue: '#81a1c1'
+    blue: '#7283A2'
     magenta: '#b48ead'
-    cyan: '#88c0d0'
+    cyan: '#89B0C1'
     white: '#e5e9f0'
   bright:
-    black: '#8867b7'
-    red: '#bf616a'
-    green: '#a3be8c'
+    black: '#58647C'
+    red: '#B3644D'
+    green: '#6A9D6C'
     yellow: '#ebcb8b'
-    blue: '#81a1c1'
+    blue: '#7283A2'
     magenta: '#b48ead'
-    cyan: '#8fbcbb'
+    cyan: '#89B0C1'
     white: '#eceff4'
   dim:
     black: '#373e4d'

@@ -1,0 +1,64 @@
+{
+  "float": [
+    {
+      "class": "pop-shell-example",
+      "title": "pop-shell-example"
+    },
+    {
+      "class": "com.mattjakeman.ExtensionManager"
+    },
+    {
+      "class": "org.gnome.Calculator",
+      "title": "Calculator"
+    },
+    {
+      "class": "org.gnome.Calculator"
+    },
+    {
+      "class": "balena-etcher-electron"
+    },
+    {
+      "class": "python3"
+    },
+    {
+      "class": "pop-shell-exceptions"
+    },
+    {
+      "class": "nemo",
+      "title": "10% Copying file 11,403 of 55,780 to \"roms\""
+    },
+    {
+      "class": "Kvantum Manager"
+    },
+    {
+      "class": "qt6ct"
+    },
+    {
+      "class": "protonvpn"
+    },
+    {
+      "class": "smile"
+    },
+    {
+      "class": "wineboot.exe"
+    },
+    {
+      "class": "com.github.finefindus.eyedropper"
+    },
+    {
+      "class": "lutris",
+      "title": "Lutris"
+    },
+    {
+      "class": "Youtube Downloader"
+    },
+    {
+      "class": "setup.tmp"
+    },
+    {
+      "class": "Steam"
+    }
+  ],
+  "skiptaskbarhidden": [],
+  "log_on_focus": false
+}
