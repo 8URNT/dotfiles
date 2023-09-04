@@ -2,15 +2,15 @@
   transition: none;
   box-shadow: none;
   font-family: Overpass Nerd Font, Bold;
-  font-size: 13px;
+  font-size: 16px;
   color: #f8f8f2;
 }
 
 #waybar {
   margin-top: 14px;
-  background: rgb(40, 42, 54);
-  border-radius: 12px;
-  border: 2px solid #bd93f9;
+  background: #232530;
+  border-radius: 0px;
+  border: 3px solid #44475a;
 }
 
 #workspaces {

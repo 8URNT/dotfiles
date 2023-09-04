@@ -3,10 +3,10 @@
     "position": "top",
     "height": 38,
     "width": 1350,
-    "margin": "5, 0, -15, 0",
-    "modules-left": ["wlr/workspaces",  "cpu", "memory", "disk"],
+    "margin": "5, 0, -12, 0",
+    "modules-left": ["wlr/workspaces",  "cpu", "memory", "temperature"],
     "modules-center": ["wlr/taskbar"],
-    "modules-right": ["tray", "backlight", "idle_inhibitor", "pulseaudio", "clock"],
+    "modules-right": ["idle_inhibitor", "backlight","pulseaudio","battery","tray","clock"],
     "sway/mode": {
         "format": " {}"
     },
@@ -38,7 +38,7 @@
     "wlr/taskbar": {
     "format": "{icon}",
     "icon-size": 22,
-    "icon-theme": "dracula-icons-main",
+    "icon-theme": "Tela-circle-dracula",
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
@@ -56,7 +56,7 @@
         "interval": 10,
         "format": " {usage}%",
         "max-length": 10,
-        "on-click": "kitty -e 'htop'"
+        "on-click": "foot -e 'btop'"
     },
 
     "memory": {
