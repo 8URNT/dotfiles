@@ -4,7 +4,7 @@
     "height": 38,
     "width": 1350,
     "margin": "5, 0, -12, 0",
-    "modules-left": ["wlr/workspaces",  "cpu", "memory", "temperature"],
+    "modules-left": ["wlr/workspaces", "sway/workspaces" , "cpu", "memory", "temperature","custom/updates"],
     "modules-center": ["wlr/taskbar"],
     "modules-right": ["idle_inhibitor", "backlight","pulseaudio","battery","tray","clock"],
     "sway/mode": {
@@ -29,6 +29,17 @@
             "default": ""
         }
     },
+    
+      "custom/updates": {
+      "format": " {icon}  {} ",
+      "return-type": "json",
+      "format-icons": {
+           "has-updates": "󱍷",
+           "updated": "󰂪"
+       },
+       "exec-if": "which waybar-module-pacman-updates",
+       "exec": "waybar-module-pacman-updates"
+   },
     
     "sway/window": {
         "max-length": 25,
@@ -76,7 +87,7 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon} {capacity}%",
+        "format": "{icon}   {capacity}%",
         "format-charging": "⚡ {capacity}%",
         "format-plugged": "  {capacity}%",
         // "format-good": "", // An empty format will hide the module
@@ -87,8 +98,8 @@
 
     "temperature": {
         "critical-threshold": 80,
-	"format-critical": "{temperatureC}° ",
-	"format": "{temperatureC}° "
+	"format-critical": "  {temperatureC}° ",
+	"format": " {temperatureC}°"
     },
 
     "network": {
@@ -148,6 +159,11 @@
     "disk": {
         "format": " {free}" 
     },
+    
+     "sway/workspaces": {
+     "current-only": true,
+  	}
+  }
     
     "keyboard-state": {
     "numlock": true,
