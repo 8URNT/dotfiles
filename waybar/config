@@ -60,7 +60,7 @@
         "locale": "C",
         "tooltip": true, 
         "format": "{:%I : %M}",
-        "format-alt": " {:%a, %b-%d-%Y}" // Icon: calendar-alt
+        "format-alt": "{:%m/%d/%y}" // Icon: calendar-alt
     },
 
     "cpu": {
